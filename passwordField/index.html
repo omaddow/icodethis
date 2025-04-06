@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Field Challenge</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Enter your password</h1>
+        
+        <div class="account-display">
+            <img src="https://i.pravatar.cc/40?u=sarah" alt="Sarah Bills" class="profile-image">
+            <div class="account-labels">
+                <span class="account-type">Business Account</span>
+                <span class="account-name">Sarah Bills</span>
+            </div>
+        </div>
+
+        <div class="password-field">
+            <label for="password">Password</label>
+            <div class="input-wrapper">
+                <input type="password" id="password" placeholder="Enter password">
+                <button class="toggle-password" type="button">👁️</button>
+            </div>
+            <div class="password-strength">
+                <div class="strength-meter"></div>
+                <span class="strength-text">Weak</span>
+            </div>
+        </div>
+
+        <div class="options">
+            <div class="stay-signed-in">
+                <input type="checkbox" id="stay-signed-in">
+                <label for="stay-signed-in">Stay signed in</label>
+            </div>
+            <button class="continue-btn">Continue</button>
+        </div>
+
+        <a href="#" class="reset-password">Reset password</a>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
