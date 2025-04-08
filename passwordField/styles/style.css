@@ -1,176 +1,327 @@
-body {
+/* Global Styles */
+html, body {
+    /* Font family for the entire page */
     font-family: 'Segoe UI', Arial, sans-serif;
+    
+    /* Background color for the body */
     background-color: #f5f5f5;
+    
+    /* Flexbox to center content both horizontally and vertically */
     display: flex;
     justify-content: center;
     align-items: center;
+    
+    /* Ensure the body takes at least the full height of the screen */
     min-height: 100vh;
+    
+    /* Remove default margins and padding */
     margin: 0;
     padding: 20px;
+    
+    /* Disable smooth scrolling and hide overflow-y */
     scroll-behavior: none;
+    overflow-y: hidden;
 }
 
+/* Container for the main content */
 .container {
+    /* Semi-transparent white background */
     background-color: rgba(255, 255, 255, 0.9);
+    
+    /* Rounded corners */
     border-radius: 10px;
+    
+    /* Light shadow effect */
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    
+    /* Full width but with a maximum width of 400px */
     width: 100%;
     max-width: 400px;
-    padding: 50px;
+    
+    /* Padding inside the container */
+    padding: 30px;
+    
+    /* Text color */
     color: #000080;
 }
 
+/* Header (h1) style */
 .container h1 {
+    /* Font size and weight */
     font-size: 24px;
     font-weight: 600;
+    
+    /* Remove bottom margin */
     margin: 0 0 20px 0;
+    
+    /* Heading color */
     color: #000080;
 }
 
+/* Account display section (profile picture and account info) */
 .account-display {
+    /* Flexbox to align items horizontally */
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    
+    /* Space between the items */
     gap: 12px;
+    
+    /* Margin at the bottom */
     margin-bottom: 25px;
 }
 
+/* Profile image styles */
 .profile-image {
+    /* Set image dimensions */
     width: 50px;
     height: 50px;
+    
+    /* Make the image circular */
     border-radius: 50%;
+    
+    /* Light border around the image */
     border: 2px solid #e0e0e0;
+    
+    /* Ensure the image fills the container without distortion */
     object-fit: cover;
 }
 
+/* Account labels (type and name) */
 .account-labels {
+    /* Stack labels vertically */
     display: flex;
     flex-direction: column;
+    
+    /* Align text to the left */
     text-align: left;
 }
 
+/* Account type label style */
 .account-type {
+    /* Smaller font size */
     font-size: 12px;
+    
+    /* Color of the account type text */
     color: #000080;
+    
+    /* Line height for readability */
     line-height: 1.3;
 }
 
+/* Account name label style */
 .account-name {
+    /* Slightly larger font size */
     font-size: 14px;
+    
+    /* Bold font weight */
     font-weight: 600;
+    
+    /* Color of the account name text */
     color: #000080;
+    
+    /* Line height for readability */
     line-height: 1.3;
 }
 
+/* Password input section */
 .password-field {
+    /* Margin at the bottom */
     margin-bottom: 20px;
+    
+    /* Stack input and label vertically */
+    display: flex;
+    flex-direction: column;
+    
+    /* Space between the label and the input */
+    gap: 8px;
 }
 
+/* Label for password input */
 .password-field label {
+    /* Block display for the label */
     display: block;
+    
+    /* Font size */
     font-size: 14px;
+    
+    /* Color for the label text */
     color: #000080;
+    
+    /* Margin between label and input */
     margin-bottom: 8px;
 }
 
+/* Wrapper for the input and icon */
 .input-wrapper {
     position: relative;
+    display: flex;
+    align-items: center;
 }
 
+/* Lock icon in the password field */
 .fa-lock {
+    /* Position the lock icon */
     position: absolute;
     left: 15px;
     top: 50%;
+    
+    /* Vertically center the icon */
     transform: translateY(-50%);
+    
+    /* Lock icon color */
     color: #000080;
+    
+    /* Set icon size */
     font-size: 14px;
 }
 
+/* Password input field styling */
 .password-field input {
-    width: 85%;
+    /* Full width */
+    width: 100%;
+    
+    /* Padding on all sides, left padding to account for icon */
     padding: 12px 15px 12px 40px;
+    
+    /* Border color and radius */
     border: 1px solid #000080;
     border-radius: 6px;
+    
+    /* Font size and color */
     font-size: 16px;
     color: #000080;
+    
+    /* Include padding in total width calculation */
+    box-sizing: border-box;
 }
 
+/* Focused state for password input */
 .password-field input:focus {
+    /* Remove default outline */
     outline: none;
+    
+    /* Change border color and add a slight shadow */
     border-color: #000080;
     box-shadow: 0 0 0 2px rgba(0, 0, 128, 0.2);
 }
 
 /* Password Strength Meter */
 .password-strength {
+    /* Flexbox to align items horizontally */
     display: flex;
     align-items: center;
+    
+    /* Gap between strength bar and text */
     gap: 10px;
+    
+    /* Margin at the top */
     margin-top: 8px;
 }
 
+/* Strength meter background */
 .strength-meter {
+    /* Allow bar to grow and take full width */
     flex-grow: 1;
+    
+    /* Set height */
     height: 4px;
+    
+    /* Light background color */
     background-color: #eee;
+    
+    /* Rounded corners */
     border-radius: 2px;
+    
+    /* Hide overflow for smooth animation */
     overflow: hidden;
 }
 
+/* Strength bar styles */
 .strength-bar {
+    /* Set initial width */
     height: 100%;
     width: 0%;
+    
+    /* Color of the strength bar */
     background-color: #ff4d4d;
+    
+    /* Smooth animation for width and background-color */
     transition: width 0.3s ease, background-color 0.3s ease;
 }
 
+/* Strength text color */
 .strength-text {
     font-size: 12px;
     color: #ff4d4d;
+    
+    /* Smooth transition for color change */
     transition: color 0.3s ease;
 }
 
+/* Password visibility toggle button */
 .toggle-password {
     position: absolute;
     right: 10px;
     top: 50%;
     transform: translateY(-50%);
+    
+    /* No background, no border */
     background: none;
     border: none;
-    color: #000080; /* Navy */
+    
+    /* Color of the toggle button */
+    color: #000080;
+    
+    /* Pointer cursor for click action */
     cursor: pointer;
+    
+    /* Padding around the button */
     padding: 8px;
+    
+    /* Ensure the button stays on top of the input */
+    z-index: 1;
 }
 
+/* Options section for the stay-signed-in checkbox and continue button */
 .options {
+    /* Flexbox for spacing between elements */
     display: flex;
     justify-content: space-between;
     align-items: center;
+    
+    /* Margin at the bottom */
     margin-bottom: 25px;
 }
 
+/* Stay signed in checkbox styles */
 .stay-signed-in {
+    /* Flexbox to align checkbox and label */
     display: flex;
     align-items: center;
     gap: 8px;
 }
 
-/* Toggle switch styles */
+/* Switch styles (toggle switch) */
 .switch {
+    /* Container for the switch */
     position: relative;
     display: inline-block;
     width: 40px;
     height: 24px;
-    margin-right: 8px;
-  }
-  
-  .switch input {
+    margin-right: 2px;
+}
+
+/* Hide the default checkbox input */
+.switch input {
     opacity: 0;
     width: 0;
     height: 0;
-  }
-  
-  .slider {
+}
+
+/* Slider (background of the switch) */
+.slider {
     position: absolute;
     cursor: pointer;
     top: 0;
@@ -179,10 +330,13 @@ body {
     bottom: 0;
     background-color: transparent;
     border: 1px solid #000080;
+    
+    /* Smooth transition for color change */
     transition: .4s ease;
-  }
-  
-  .slider:before {
+}
+
+/* Slider knob (circle) inside the switch */
+.slider:before {
     position: absolute;
     content: "";
     height: 14px;
@@ -190,34 +344,40 @@ body {
     left: 2px;
     bottom: 4px;
     background-color: #000080;
+    
+    /* Smooth transition for the knob's movement */
     transition: .4s ease;
-  }
-  
-  input:checked + .slider {
+}
+
+/* When the switch is checked, change the background color and move the knob */
+input:checked + .slider {
     background-color: transparent;
     border: 1px solid #000080;
-  }
-  
-  input:checked + .slider:before {
+}
+
+input:checked + .slider:before {
     transform: translateX(20px);
     background-color: #000080;
-  }
-  
-  .slider.round {
+}
+
+/* Rounded corners for the slider */
+.slider.round {
     border-radius: 20px;
-  }
-  
-  .slider.round:before {
+}
+
+.slider.round:before {
     border-radius: 50%;
-  }
-  
-  .stay-signed-in-label {
+}
+
+/* Label for the stay-signed-in checkbox */
+.stay-signed-in-label {
     font-size: 14px;
     color: #000080;
     cursor: pointer;
-   line-height: 1.3;
-  }
+    line-height: 1.3;
+}
 
+/* Continue button styling */
 .continue-btn {
     background-color: #00005b;
     color: white;
@@ -227,22 +387,29 @@ body {
     font-size: 14px;
     font-weight: 500;
     cursor: pointer;
+    
+    /* Transition effect for hover state */
     transition: background-color 0.2s;
 }
 
+/* Hover effect for the continue button */
 .continue-btn:hover {
     background-color: #000080;
 }
 
+/* Reset password link styling */
 .reset-password {
     display: block;
     font-size: 14px;
     font-weight: 600;
     color: #000080;
     text-decoration: underline;
+    
+    /* Smooth transition for color change */
     transition: color 0.2s;
 }
 
+/* Hover effect for the reset password link */
 .reset-password:hover {
     color: #00005b; /* Darker navy */
 }

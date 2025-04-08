@@ -1,56 +1,99 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Meta charset for proper character encoding -->
     <meta charset="UTF-8">
+    
+    <!-- Viewport settings for responsiveness on different devices -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Title of the page, what appears on the browser tab -->
     <title>Password Field Challenge</title>
+    
+    <!-- Link to external stylesheet for custom styles -->
     <link rel="stylesheet" href="styles/style.css">
+    
+    <!-- Font Awesome for icons like the lock and eye icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 </head>
 <body>
+    <!-- Main container that wraps all the content -->
     <div class="container">
+        
+        <!-- Heading for the page, introducing the action (password entry) -->
         <h1>Enter your password</h1>
         
+        <!-- Section displaying account details (e.g., profile image and account info) -->
         <div class="account-display">
+            <!-- Placeholder image for user profile -->
             <img src="https://i.pravatar.cc/40?u=sarah" alt="Sarah Bills" class="profile-image">
+            
+            <!-- Account labels containing account type and account holder's name -->
             <div class="account-labels">
+                <!-- Account type, e.g., Business or Personal -->
                 <span class="account-type">Business Account</span>
+                
+                <!-- Account holder's name -->
                 <span class="account-name">Sarah Bills</span>
             </div>
         </div>
 
+        <!-- Password input section -->
         <div class="password-field">
+            <!-- Label for the password input field -->
             <label for="password">Password</label>
+            
+            <!-- Wrapper div for the input field and toggle visibility button -->
             <div class="input-wrapper">
+                <!-- Lock icon for the password field -->
                 <i class="fa-solid fa-lock"></i>
+                
+                <!-- Password input field, initially hides password characters -->
                 <input type="password" id="password" placeholder="Enter password">
+                
+                <!-- Button to toggle password visibility (icon of an eye) -->
                 <button class="toggle-password" type="button">
                     <i class="fa-solid fa-eye"></i>
                 </button>
             </div>
+
+            <!-- Password strength section -->
             <div class="password-strength">
+                <!-- Strength meter (visual representation of password strength) -->
                 <div class="strength-meter">
                     <div class="strength-bar"></div>
                 </div>
+                
+                <!-- Text showing current password strength (e.g., Weak, Medium, Strong) -->
                 <span class="strength-text">Weak</span>
             </div>
         </div>
 
+        <!-- Additional options below the password field -->
         <div class="options">
+            <!-- Stay signed in checkbox for user preference -->
             <div class="stay-signed-in">
+                <!-- Custom switch (checkbox) for staying signed in -->
                 <label class="switch">
                     <input type="checkbox" id="stay-signed-in">
+                    <!-- The slider that visually represents the switch -->
                     <span class="slider round"></span>
-                  </label>
-                  <label for="stay-signed-in" class="stay-signed-in-label">Stay signed in</label>
+                </label>
+                
+                <!-- Label for the stay signed in option -->
+                <label for="stay-signed-in" class="stay-signed-in-label">Stay signed in</label>
             </div>
+            
+            <!-- Continue button for submitting the form or moving to the next step -->
             <button class="continue-btn">Continue</button>
         </div>
 
+        <!-- Link to reset the password if the user forgets it -->
         <a href="#" class="reset-password">Reset password</a>
         
     </div>
+
+    <!-- Link to the external JavaScript file for handling interactivity -->
     <script src="js/script.js"></script>
 </body>
 </html>
