@@ -4,6 +4,7 @@ html, body {
     scroll-behavior: none;
     overflow-y: hidden;
 }
+
 body {
     /* Font family for the entire page */
     font-family: 'Segoe UI', Arial, sans-serif;
@@ -41,7 +42,7 @@ body {
     max-width: 400px;
     
     /* Padding inside the container */
-    padding: 30px;
+    padding: 50px;
     
     /* Text color */
     color: #000080;
