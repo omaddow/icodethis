@@ -1,4 +1,5 @@
 // Toggle Password Visibility
+/*
 const togglePassword = document.querySelector('.toggle-password');
 const passwordInput = document.querySelector('#password');
 
@@ -42,4 +43,16 @@ passwordInput.addEventListener('input', function() {
     strengthMeter.querySelector('::after').style.width = `${width}%`;
     strengthText.textContent = text;
     strengthText.style.color = color;
+});
+*/
+// Toggle Password Visibility
+const togglePassword = document.querySelector('.toggle-password');
+const passwordInput = document.querySelector('#password');
+const eyeIcon = togglePassword.querySelector('i');
+
+togglePassword.addEventListener('click', function() {
+    const type = passwordInput.getAttribute('type') === 'password' ? 'text' : 'password';
+    passwordInput.setAttribute('type', type);
+    eyeIcon.classList.toggle('fa-eye');
+    eyeIcon.classList.toggle('fa-eye-slash');
 });
