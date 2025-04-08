@@ -1,5 +1,10 @@
 /* Global Styles */
 html, body {
+    /* Disable smooth scrolling and hide overflow-y */
+    scroll-behavior: none;
+    overflow-y: hidden;
+}
+body {
     /* Font family for the entire page */
     font-family: 'Segoe UI', Arial, sans-serif;
     
@@ -18,9 +23,6 @@ html, body {
     margin: 0;
     padding: 20px;
     
-    /* Disable smooth scrolling and hide overflow-y */
-    scroll-behavior: none;
-    overflow-y: hidden;
 }
 
 /* Container for the main content */
@@ -69,7 +71,7 @@ html, body {
     gap: 12px;
     
     /* Margin at the bottom */
-    margin-bottom: 25px;
+    margin-bottom: 20px;
 }
 
 /* Profile image styles */
@@ -150,7 +152,7 @@ html, body {
     color: #000080;
     
     /* Margin between label and input */
-    margin-bottom: 8px;
+    margin-bottom: 0px;
 }
 
 /* Wrapper for the input and icon */
@@ -190,7 +192,7 @@ html, body {
     border-radius: 6px;
     
     /* Font size and color */
-    font-size: 16px;
+    font-size: 14px;
     color: #000080;
     
     /* Include padding in total width calculation */
@@ -217,7 +219,7 @@ html, body {
     gap: 10px;
     
     /* Margin at the top */
-    margin-top: 8px;
+    margin-top: 0px;
 }
 
 /* Strength meter background */

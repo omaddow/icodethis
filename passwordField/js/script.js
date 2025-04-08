@@ -74,3 +74,18 @@ passwordInput.addEventListener('input', function() {
             break;
     }
 });
+
+
+// Clear password field when reset link is clicked
+document.querySelector('.reset-password').addEventListener('click', function(e) {
+    // Prevent the default anchor tag behavior (page reload/navigation)
+    e.preventDefault();
+    
+    // Select the password input field and set its value to empty string
+    document.querySelector('#password').value = '';
+    
+    // Optional: You could also reset the strength meter here if needed
+    document.querySelector('.strength-bar').style.width = '0%';
+    document.querySelector('.strength-text').textContent = 'Weak';
+    document.querySelector('.strength-text').style.color = '#ff4d4d';
+});
