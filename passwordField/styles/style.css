@@ -1,219 +1,3 @@
-/* body {
-    font-family: 'Segoe Ui', Arial, sans-serif;
-    background-color: #f5f5f5;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    min-width: 100vw;
-    margin: 0;
-    padding: 0;
-}
-
-.container {
-    background-color: white;
-    border-radius: 10px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    width: 100%;
-    max-width: 400px;
-    padding: 50px;
-    color: #170370;
-}
-
-.container h1 {
-    font-size: 24px;
-    font-weight: 600;
-    margin: 0 0 20px 0;
-}
-
-.account-display {
-    display: flex;
-    align-items: center; 
-    gap: 12px; 
-    margin-bottom: 20px;
-}
-
-.profile-image {
-    width: 50px;
-    height: 50px;
-    border-radius: 50px;
-    border: 2px solid #e0e0e0;
-    object-fit: cover;
-}
-
-.account-type {
-    display: flex;
-    font-size: 12px;
-    line-height: 1.3;
-}
-
-.account-name {
-    font-size: 14px;
-    font-weight: 600;
-    line-height: 1.3;
-}
-
-.password-field {
-    display: block;
-    font-size: 14px;
-    margin-bottom: 8px;
-}
-
-.input-wrapper {
-    position: relative;
-}
-
-.password-field input {
-    width: 100%;
-    padding: 12px 40px 12px 15px;
-    border: 1px solid #ddd;
-    border-radius: 6px;
-    
-}
-
-
-
-
-
-
-
-/*
-
-.password-field input {
-    width: 100%;
-    padding: 12px 40px 12px 15px;
-    border: 1px solid #ddd;
-    border-radius: 6px;
-    font-size: 16px;
-}
-
-.password-field input:focus {
-    outline: none;
-    border-color: #4a90e2;
-    box-shadow: 0 0 0 2px rgba(74, 144, 226, 0.2);
-}
-
-.toggle-password {
-    position: absolute;
-    right: 10px;
-    top: 50%;
-    transform: translateY(-50%);
-    background: none;
-    border: none;
-    cursor: pointer;
-    font-size: 16px;
-}
-
-
-.password-strength {
-    margin-top: 8px;
-    height: 5px;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-
-.strength-meter {
-    flex-grow: 1;
-    height: 100%;
-    background-color: #eee;
-    border-radius: 3px;
-    overflow: hidden;
-}
-
-.strength-meter::after {
-    content: '';
-    display: block;
-    height: 100%;
-    width: 20%;
-    background-color: #ff4d4d;
-}
-
-.strength-text {
-    font-size: 12px;
-    color: #ff4d4d;
-}
-
-
-.options {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 25px;
-}
-
-.stay-signed-in {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-}
-
-.stay-signed-in input[type="checkbox"] {
-    width: 16px;
-    height: 16px;
-    accent-color: #4a90e2;
-}
-
-.stay-signed-in label {
-    font-size: 14px;
-    color: #555;
-    cursor: pointer;
-}
-
-
-.continue-btn {
-    background-color: #4a90e2;
-    color: white;
-    border: none;
-    border-radius: 6px;
-    padding: 10px 20px;
-    font-size: 14px;
-    font-weight: 500;
-    cursor: pointer;
-    transition: background-color 0.2s;
-}
-
-.continue-btn:hover {
-    background-color: #3a7bc8;
-}
-
-
-.reset-password {
-    display: block;
-    text-align: center;
-    font-size: 14px;
-    color: #4a90e2;
-    text-decoration: none;
-    transition: color 0.2s;
-}
-
-.reset-password:hover {
-    color: #3a7bc8;
-    text-decoration: underline;
-}
-
-
-@media (max-width: 480px) {
-    .container {
-        padding: 20px;
-    }
-    
-    .options {
-        flex-direction: column;
-        gap: 15px;
-    }
-    
-    .stay-signed-in {
-        align-self: flex-start;
-    }
-    
-    .continue-btn {
-        width: 100%;
-    }
-}
-
-*/
-
 body {
     font-family: 'Segoe UI', Arial, sans-serif;
     background-color: #f5f5f5;
@@ -223,36 +7,37 @@ body {
     min-height: 100vh;
     margin: 0;
     padding: 20px;
+    scroll-behavior: none;
 }
 
 .container {
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.9);
     border-radius: 10px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     width: 100%;
     max-width: 400px;
-    padding: 30px;
-    color: #333;
+    padding: 50px;
+    color: #000080;
 }
 
 .container h1 {
     font-size: 24px;
     font-weight: 600;
     margin: 0 0 20px 0;
-    text-align: center;
+    color: #000080;
 }
 
 .account-display {
     display: flex;
-    justify-content: flex-end;
+    justify-content: flex-start;
     align-items: center;
     gap: 12px;
     margin-bottom: 25px;
 }
 
 .profile-image {
-    width: 40px;
-    height: 40px;
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
     border: 2px solid #e0e0e0;
     object-fit: cover;
@@ -261,19 +46,19 @@ body {
 .account-labels {
     display: flex;
     flex-direction: column;
-    text-align: right;
+    text-align: left;
 }
 
 .account-type {
     font-size: 12px;
-    color: #666;
+    color: #000080;
     line-height: 1.3;
 }
 
 .account-name {
     font-size: 14px;
     font-weight: 600;
-    color: #222;
+    color: #000080;
     line-height: 1.3;
 }
 
@@ -284,7 +69,7 @@ body {
 .password-field label {
     display: block;
     font-size: 14px;
-    color: #555;
+    color: #000080;
     margin-bottom: 8px;
 }
 
@@ -297,22 +82,52 @@ body {
     left: 15px;
     top: 50%;
     transform: translateY(-50%);
-    color: #999;
+    color: #000080;
     font-size: 14px;
 }
 
 .password-field input {
-    width: 100%;
+    width: 85%;
     padding: 12px 15px 12px 40px;
-    border: 1px solid #ddd;
+    border: 1px solid #000080;
     border-radius: 6px;
     font-size: 16px;
+    color: #000080;
 }
 
 .password-field input:focus {
     outline: none;
-    border-color: #4a90e2;
-    box-shadow: 0 0 0 2px rgba(74, 144, 226, 0.2);
+    border-color: #000080;
+    box-shadow: 0 0 0 2px rgba(0, 0, 128, 0.2);
+}
+
+/* Password Strength Meter */
+.password-strength {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 8px;
+}
+
+.strength-meter {
+    flex-grow: 1;
+    height: 4px;
+    background-color: #eee;
+    border-radius: 2px;
+    overflow: hidden;
+}
+
+.strength-bar {
+    height: 100%;
+    width: 0%;
+    background-color: #ff4d4d;
+    transition: width 0.3s ease, background-color 0.3s ease;
+}
+
+.strength-text {
+    font-size: 12px;
+    color: #ff4d4d;
+    transition: color 0.3s ease;
 }
 
 .toggle-password {
@@ -322,7 +137,7 @@ body {
     transform: translateY(-50%);
     background: none;
     border: none;
-    color: #666;
+    color: #000080; /* Navy */
     cursor: pointer;
     padding: 8px;
 }
@@ -340,41 +155,94 @@ body {
     gap: 8px;
 }
 
-.stay-signed-in input[type="checkbox"] {
-    width: 16px;
-    height: 16px;
-    accent-color: #4a90e2;
-}
-
-.stay-signed-in label {
-    font-size: 14px;
-    color: #555;
+/* Toggle switch styles */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 24px;
+    margin-right: 8px;
+  }
+  
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    position: absolute;
     cursor: pointer;
-}
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: transparent;
+    border: 1px solid #000080;
+    transition: .4s ease;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 14px;
+    width: 14px;
+    left: 2px;
+    bottom: 4px;
+    background-color: #000080;
+    transition: .4s ease;
+  }
+  
+  input:checked + .slider {
+    background-color: transparent;
+    border: 1px solid #000080;
+  }
+  
+  input:checked + .slider:before {
+    transform: translateX(20px);
+    background-color: #000080;
+  }
+  
+  .slider.round {
+    border-radius: 20px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+  
+  .stay-signed-in-label {
+    font-size: 14px;
+    color: #000080;
+    cursor: pointer;
+   line-height: 1.3;
+  }
 
 .continue-btn {
-    background-color: #4a90e2;
+    background-color: #00005b;
     color: white;
     border: none;
     border-radius: 6px;
-    padding: 10px 20px;
+    padding: 12px 8px;
     font-size: 14px;
     font-weight: 500;
     cursor: pointer;
+    transition: background-color 0.2s;
 }
 
 .continue-btn:hover {
-    background-color: #3a7bc8;
+    background-color: #000080;
 }
 
 .reset-password {
     display: block;
-    text-align: center;
     font-size: 14px;
-    color: #4a90e2;
-    text-decoration: none;
+    font-weight: 600;
+    color: #000080;
+    text-decoration: underline;
+    transition: color 0.2s;
 }
 
 .reset-password:hover {
-    text-decoration: underline;
+    color: #00005b; /* Darker navy */
 }
