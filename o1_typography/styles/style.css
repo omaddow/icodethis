@@ -8,6 +8,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 100vh;
     margin: 50px;
     background-color: #f1f1f1;
 }
@@ -15,6 +16,7 @@ body {
 .container {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     padding: 20px;
     background-color: #fff;
     border-radius: 8px;
@@ -23,16 +25,18 @@ body {
 
 .typography {
     margin: 50px;
+    padding: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .typo {
-    margin: 15px 0;
     text-transform: uppercase;
     font-weight: 600;
     padding: 2px 4px 2px 4px;
 }
 
 .bld {
+    margin-top: 12px;
     font-weight: bold;
 }
 
@@ -56,4 +60,60 @@ body {
 
 .sktch {
     text-decoration: line-through;
+}
+
+.headings {
+    margin: 50px;
+    padding: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.head {
+    text-transform: uppercase;
+    font-weight: 600;
+    padding: 2px 4px 2px 4px;
+}
+
+.colors {
+    margin: 50px;
+    padding: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.org {
+    color: orange;
+}
+
+.ppl {
+    margin-top: 12px;
+    color: purple;
+}
+
+.orange {
+    margin-top: 10px;
+    height: 50px;
+    width: 50px;
+    border: none;
+    background-color: orange;
+}
+
+.purple {
+    margin-top: 10px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: none;
+    background-color: purple;
+}
+
+.buttons {
+    margin: 50px;
+    padding: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.btn {
+    text-transform: uppercase;
+    font-weight: 600;
+    padding: 2px 4px 2px 4px;
 }
