@@ -23,7 +23,7 @@ body {
     text-align: center;
     width: 800px;
     max-width: 800px;
-    padding: 20px 40px 200px;
+    padding: 20px 40px 20px;
     box-sizing: border-box;
     overflow: hidden;
     z-index: 1;
@@ -69,6 +69,19 @@ body {
     margin: auto;
     font-size: 14px;
 }
+
+.container p:nth-of-type(3) {
+    margin-top: 30px;
+    font-size: 12px;
+    opacity: 0.8;
+}
+
+.container p:last-child {
+    margin-top: 200px;
+    font-size: 12px;
+    opacity: 0.8;
+}
+
 .container a {
     color: white;
     text-decoration: underline;
