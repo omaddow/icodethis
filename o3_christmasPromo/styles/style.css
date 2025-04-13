@@ -24,15 +24,14 @@ body {
 }
 
 .close-button {
-    text-align: right;
+    display: flex;
+    justify-content: flex-end;
     font-size: 30px;
-    top: 0;
     margin: 15px 22.5px;
     color: #1c0068;
 }
 
 .fa-xmark {
-    color: #1c0068;
     opacity: 0.5;
     cursor: pointer;
 }
