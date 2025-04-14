@@ -1,35 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="styles/style.css">
-    <title>Subscribe</title>
+  <meta charset="UTF-8" />
+  <!-- Responsive meta tag for mobile devices -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  
+  <title>Subscribe</title>
+
+  <!-- Link to external CSS file -->
+  <link rel="stylesheet" href="styles/style.css" />
+
+  <!-- Font Awesome for the arrow icon in the button -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
 </head>
 <body>
 
-    <div class="container">
-        <div class="heading">
-            <p class="title">Let's keep in touch</p>
-            <p class="text">Subscribe to keep up with fresh news and exciting updates. We promise not to spam you!</p>
-        </div>
-        <div class="form-container">
-            <form action="#">
-                <div class="input-group">
-                    <label for="email" ></label>
-                    <input type="text" id="email" name="email" placeholder="Enter your email address">
-                    <button type="submit" value="SEND" class="submit-button">
-                        SEND <i class="fa-solid fa-arrow-right"></i>
-                    </bbutton>
-                </div>
-                <div class="checkbox-group">
-                    <input type="checkbox" id="terms" name="terms" value="agree">
-                    <label for="terms">I agree to my email address being stored and used to recieve monthly newsletter.</label>
-                </div>
-            </form>
-        </div>
-    </div>
-    
+  <!-- Card container to center content and style it like a box -->
+  <div class="card">
+
+    <!-- Main heading -->
+    <h2 class="card-title">Let’s keep in touch</h2>
+
+    <!-- Subheading text -->
+    <p class="card-text">
+      Subscribe to keep up with fresh news and exciting updates.<br />
+      We promise not to spam you!
+    </p>
+
+    <!-- Form wrapper -->
+    <form class="form">
+
+      <!-- Email input and button on same row using flexbox -->
+      <div class="input-wrapper">
+        <!-- Input for email with placeholder -->
+        <input type="email" placeholder="Enter your email address" required />
+
+        <!-- Submit button with an arrow icon -->
+        <button type="submit">
+          SEND <i class="fa-solid fa-arrow-right"></i>
+        </button>
+      </div>
+
+      <!-- Checkbox for newsletter consent -->
+      <div class="checkbox-wrapper">
+        <!-- Checkbox input -->
+        <input type="checkbox" id="consent" />
+
+        <!-- Label for the checkbox, linked using 'for' attribute -->
+        <label for="consent">
+          I agree to my email address being stored and<br />
+          used to receive monthly newsletter.
+        </label>
+      </div>
+
+    </form>
+  </div>
+
 </body>
 </html>

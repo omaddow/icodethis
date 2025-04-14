@@ -1,86 +1,105 @@
-html {
+/* Reset spacing and set global font */
+* {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    scroll-behavior: none;
-    overflow: hidden;
+    font-family: "Poppins", sans-serif;
 }
 
+/* Fullscreen background and center content */
 body {
-    font-family: 'Poppins', 'Segoe UI', Arial, sans-serif;
-    background-color: #f1f1f1;
+    background-color: #f6fafd; /* light blue/gray background */
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    box-sizing: border-box;
-    min-height: 100vh;
+}
+
+/* Main white card box */
+.card {
+    background-color: #ffffff;
+    padding: 40px 50px; /* padding around content */
+    border-radius: 10px; /* rounded corners */
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.06); /* soft shadow */
     width: 100%;
-}
-
-.container {
-    position: relative;
-    flex-direction: column;
-    background-color: rgba(255, 255, 255, 0.9);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    border: none;
-    border-radius: 4px;
-    width: 500px;
-    padding: 50px;
-}
-
-.heading {
-    margin: 0;
+    max-width: 600px; /* responsive limit */
     text-align: center;
 }
 
-.heading .title {
+/* Card title */
+.card-title {
     font-size: 20px;
     font-weight: 600;
+    margin-bottom: 10px;
+    color: #000; /* black text */
 }
 
-.heading .text {
+/* Subheading text */
+.card-text {
     font-size: 14px;
-    font-weight: 400;
+    color: #555; /* gray text */
+    line-height: 1.6; /* spacing between lines */
+    margin-bottom: 30px;
 }
 
-.form-container {
-    margin-top: 50px;
+/* Form layout: stack elements with gap */
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* space between input section and checkbox */
 }
 
-#email {
-    width: 50%;
-    padding: 15px;
-    border-radius: 4px;
+/* Wrap input and button on the same row */
+.input-wrapper {
+    display: flex;
+    gap: 10px; /* space between input and button */
+}
+
+/* Email input styling */
+.input-wrapper input[type="email"] {
+    flex: 1; /* take all remaining space */
+    padding: 15px 20px;
     border: 1px solid #ccc;
+    border-radius: 6px;
     font-size: 14px;
-    font-weight: 400;
 }
 
-#email:focus {
+/* Focus state for accessibility and visual feedback */
+.input-wrapper input[type="email"]:focus {
     outline: none;
-    border-color: #ccc;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    border-color: #80bfff;
+    box-shadow: 0 0 5px rgba(128, 191, 255, 0.5);
 }
 
-.submit-button {
-    width: 40%;
-    padding: 15px;
-    border-radius: 4px;
+/* Submit button */
+.input-wrapper button {
+    padding: 15px 25px;
     border: none;
-    background-color: rgb(80, 150, 255);
+    border-radius: 6px;
+    background-color: #339dff; /* blue */
+    box-shadow: 0 4px 2px rgba(128, 191, 255, 0.5);
     color: white;
+    font-weight: 500;
     font-size: 14px;
-    font-weight: 400;
-    margin-left: 10px;
+    display: flex;
+    align-items: center;
+    gap: 8px; /* spacing between text and icon */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
-.submit-button:hover {
-    background-color: rgb(30, 139, 255);
-    cursor: pointer;
-    transition: 0.3s;
+/* Hover effect on button */
+.input-wrapper button:hover {
+    background-color: #218dff;
 }
-.checkbox-group {
-    margin-top: 20px;
+
+/* Checkbox section */
+.checkbox-wrapper {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
     font-size: 13px;
-    width: 300px;
-    line-height: 1.3;
+    color: #444;
+    text-align: left;
+    line-height: 1.4;
 }
