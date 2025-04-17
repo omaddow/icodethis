@@ -1,121 +1,191 @@
+/* General styles for the pricing table page */
 * {
     box-sizing: border-box;
 }
 
+/* Styling for the body to set a background color and font */
 body {
+    /* Background color for the entire page */
     background: #f5f8fe;
+    /* Font family for the text */
     font-family: 'Poppins', sans-serif;
+    /* Display settings for centering content */
     display: flex;
     align-items: center;
     justify-content: center;
+    /* Margin reset */
     margin: 0;
+    /* Minimum height to cover the viewport */
     min-height: 100vh;
+    /* Prevent horizontal overflow */
     overflow-x: hidden;
 }
 
+/* Styling for the main container */
 main {
+    /* Background with transparency */
     background: rgba(255, 255, 255, 0.5);
+    /* Border styling */
     border: 10px solid #fff;
+    /* Rounded corners */
     border-radius: 10px;
+    /* Positioning */
     position: relative;
 }
 
+/* Styling for the pricing list */
 .pricing-list {
+    /* Displaying items in a row */
     display: flex;
+    /* Spacing between items */
     gap: 2rem;
+    /* Allow wrapping of items */
     flex-wrap: wrap;
+    /* Centering items */
     justify-content: center;
+    /* Padding for the list */
     padding: 2rem;
+    /* Margin reset */
     margin: 0;
-    list-style-type: none;;
+    /* Removing default list styles */
+    list-style-type: none;
 }
 
+/* Styling for the pricing list headings */
 .pricing-list h2 {
+    /* Font weight for emphasis */
     font-weight: 500;
+    /* Margin reset */
     margin-top: 0;
 }
 
+/* Styling for the price section */
 .pricing-list .price {
+    /* Font size for the price */
     font-size: 3rem;
+    /* Font weight for emphasis */
     font-weight: bold;
+    /* Line height for spacing */
     line-height: 1;
+    /* Margin for spacing */
     margin: 0.25rem 0;
 }
 
+/* Styling for the price span */
 .pricing-list .price span {
+    /* Font size for the span */
     font-size: 1.5rem;
+    /* Adjusting margin */
     margin-right: -10px;
 }
 
+/* Styling for the description section */
 .pricing-list .description {
+    /* Maximum width for the description */
     max-width: 220px;
+    /* Margin for spacing */
     margin: 2rem 0;
+    /* Line height for readability */
     line-height: 1.4;
 }
 
+/* Styling for the buttons */
 .btn {
+    /* Background color for the button */
     background: orange;
+    /* Removing the default border */
     border: none;
+    /* Border radius for rounded corners */
     border-radius: 5px;
+    /* Cursor style on hover */
     cursor: pointer;
+    /* Font weight for emphasis */
     font-weight: bold;
+    /* Padding inside the button */
     padding: 1rem;
-    transition: box-shaddow 0.2s ease;
+    /* Transition effect for hover */
+    transition: box-shadow 0.2s ease;
 }
 
+/* Hover effects for buttons */
 .btn:hover {
+    /* Adding a shadow effect on hover */
     box-shadow: 0 0 0 4px #000000;
 }
 
+/* Active state for buttons */
 .btn:active {
+    /* Removing the shadow effect */
     box-shadow: 0 0 0 0px #000000;
 }
 
+/* Specific background colors for decorative spheres */
 .bg-pink {
+    /* Background color for pink sphere */
     background: #EEBAFE;
 }
 
 .bg-teal {
+    /* Background color for teal sphere */
     background: #ADF1F5;
 }
 
 .bg-yellow {
+    /* Background color for yellow sphere */
     background: #FeDDB7;
 }
 
+/* Decorative spheres with different colors */
 .sphere {
+    /* Positioning the spheres */
     position: absolute;
+    /* Adding a blur effect */
     filter: blur(80px);
+    /* Circular shape */
     border-radius: 50%;
+    /* Dimensions of the sphere */
     height: 300px;
     width: 300px;
+    /* Z-index for layering */
     z-index: -1;
 }
 
+/* Positioning for the first sphere */
 .sphere:nth-child(1) {
+    /* Positioning at the bottom left */
     bottom: 0;
     left: 0;
+    /* Translation for alignment */
     translate: -50% 50%;
 }
 
+/* Positioning for the second sphere */
 .sphere:nth-child(2) {
+    /* Positioning at the top left */
     top: 0;
     left: 0;
+    /* Translation for alignment */
     translate: 25% -50%;
 }
 
+/* Positioning for the third sphere */
 .sphere:nth-child(3) {
+    /* Positioning at the top right */
     top: 0;
     right: 0;
+    /* Translation for alignment */
     translate: 25% -25%;
 }
 
+/* Media query for small screens */
 @media screen and (width < 8) {
+    /* Centering text in the main container */
     main {
         text-align: center;
     }
 
+    /* Adjusting gap for pricing list items */
     .pricing-list {
-        gap: 4rem
+        gap: 4rem;
     }
 }
