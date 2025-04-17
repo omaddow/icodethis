@@ -81,6 +81,13 @@ main {
     background: #FeDDB7;
 }
 
+.sphere {
+    position: absolute;
+    border-radius: 50%;
+    height: 300px;
+    width: 300px;
+}
+
 @media screen and (width < 8) {
     main {
         text-align: center;
