@@ -23,23 +23,20 @@
 .header-w {
   display: flex;
   align-items: center;
-  justify-content: space-between;
   background-color: white;
   margin-bottom: 20px;
   padding: 12px;
   font-size: 12px;
 }
 
+.header-w-text {
+  flex: 1;
+  margin-left: 20px;
+}
+
 .header-w .fa-circle-check {
   font-size: 20px;
   color: #00c407;
-}
-
-.header-b .fa-circle-check {
-  font-size: 20px;
-  background-color: #00c407;
-  color: white;
-  border-radius: 50%;
 }
 
 .header-b {
@@ -54,6 +51,18 @@
   font-size: 12px;
 }
 
+.header-b .fa-circle-check {
+  font-size: 20px;
+  background-color: #00c407;
+  color: white;
+  border-radius: 50%;
+}
+
+.header-b-text {
+  flex: 1;
+  margin-left: 20px;
+}
+
 .center-w {
   display: flex;
   align-items: center;
@@ -65,16 +74,14 @@
   font-size: 12px;
 }
 
+.center-w-text {
+  flex: 1;
+  margin-left: 20px;
+}
+
 .center-w .fa-circle-check {
   font-size: 20px;
   color: #00c407;
-}
-
-.center-b .fa-circle-check {
-  font-size: 20px;
-  background-color: #00c407;
-  color: white;
-  border-radius: 50%;
 }
 
 .center-b {
@@ -90,14 +97,30 @@
   font-size: 12px;
 }
 
+.center-b-text {
+  flex: 1;
+  margin-left: 20px;
+}
+
+.center-b .fa-circle-check {
+  font-size: 20px;
+  background-color: #00c407;
+  color: white;
+  border-radius: 50%;
+}
+
 .footer-w {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   background-color: white;
   margin-bottom: 20px;
   padding: 12px;
   font-size: 12px;
+}
+
+.footer-w-text {
+  margin-left: 20px;
 }
 
 .footer-w .fa-circle-check {
@@ -105,23 +128,27 @@
   color: #00c407;
 }
 
-.footer-b .fa-circle-check {
-  font-size: 20px;
-  background-color: #00c407;
-  color: white;
-  border-radius: 50%;
-}
-
 .footer-b {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   background-color: black;
   color: white;
   gap: 10px;
   margin-bottom: 50px;
   padding: 10px;
   font-size: 12px;
+}
+
+.footer-b-text {
+  margin-left: 20px;
+}
+
+.footer-b .fa-circle-check {
+  font-size: 20px;
+  background-color: #00c407;
+  color: white;
+  border-radius: 50%;
 }
 
 .close-button {
