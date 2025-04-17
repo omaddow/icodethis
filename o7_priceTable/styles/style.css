@@ -16,6 +16,7 @@ main {
     background: rgba(255, 255, 255, 0.5);
     border: 10px solid #fff;
     border-radius: 10px;
+    position: relative;
 }
 
 .pricing-list {
@@ -83,9 +84,29 @@ main {
 
 .sphere {
     position: absolute;
+    filter: blur(80px);
     border-radius: 50%;
     height: 300px;
     width: 300px;
+    z-index: -1;
+}
+
+.sphere:nth-child(1) {
+    bottom: 0;
+    left: 0;
+    translate: -50% 50%;
+}
+
+.sphere:nth-child(2) {
+    top: 0;
+    left: 0;
+    translate: 25% -25%;
+}
+
+.sphere:nth-child(3) {
+    top: 0;
+    right: 0;
+    translate: 25% -25%;
 }
 
 @media screen and (width < 8) {
