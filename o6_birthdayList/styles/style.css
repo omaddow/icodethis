@@ -2,12 +2,15 @@ html, body {
     scroll-behavior: none;
     overflow-y: hidden;
     --primary: #333;
-    --secondary: #666
+    --secondary: #666;
+    /* --bg-color: #f77990de; */
+    --bg-color: linear-gradient(to right, #f54ea2, #ff7676);;
 }
 
 body {
     font-family: 'Segoe UI', Arial, sans-serif;
-    background-color: #f77990de;
+    /* background-color: var(--bg-color); */
+    background: var(--bg-color);
     display: flex;
     justify-content: center;
     align-items: center;
