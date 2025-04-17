@@ -1,0 +1,131 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f1f5f9;
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+  }
+  
+.container {
+  width: 100%;
+  max-width: 600px;
+}
+
+.header-w {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+  margin-bottom: 20px;
+  padding: 12px;
+  font-size: 12px;
+}
+
+.header-w .fa-circle-check {
+  font-size: 20px;
+  color: #00c407;
+}
+
+.header-b .fa-circle-check {
+  font-size: 20px;
+  background-color: #00c407;
+  color: white;
+  border-radius: 50%;
+}
+
+.header-b {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: black;
+  color: white;
+  gap: 10px;
+  margin-bottom: 50px;
+  padding: 10px;
+  font-size: 12px;
+}
+
+.center-w {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+  border-radius: 999px;
+  margin-bottom: 20px;
+  padding: 12px;
+  font-size: 12px;
+}
+
+.center-w .fa-circle-check {
+  font-size: 20px;
+  color: #00c407;
+}
+
+.center-b .fa-circle-check {
+  font-size: 20px;
+  background-color: #00c407;
+  color: white;
+  border-radius: 50%;
+}
+
+.center-b {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: black;
+  color: white;
+  border-radius: 999px;
+  gap: 10px;
+  margin-bottom: 50px;
+  padding: 10px;
+  font-size: 12px;
+}
+
+.footer-w {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+  margin-bottom: 20px;
+  padding: 12px;
+  font-size: 12px;
+}
+
+.footer-w .fa-circle-check {
+  font-size: 20px;
+  color: #00c407;
+}
+
+.footer-b .fa-circle-check {
+  font-size: 20px;
+  background-color: #00c407;
+  color: white;
+  border-radius: 50%;
+}
+
+.footer-b {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: black;
+  color: white;
+  gap: 10px;
+  margin-bottom: 50px;
+  padding: 10px;
+  font-size: 12px;
+}
+
+.close-button {
+  font-size: 18px;
+  font-weight: 300;
+  color: #a5a5a5;
+}
