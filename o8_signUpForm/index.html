@@ -8,27 +8,31 @@
     <title>Sign Up Form</title>
 </head>
 <body>
+
     <main>
-        <div class="heading">
+        <div class="card">
+          <div class="heading">
             <h1>Join the community</h1>
-            <p>Take your art to the next level. Get it seen by millions of people.</p>
-        </div>
-        <button class="btn btn-join">Join with Facebook</button>
-        <p class="or">Or</p>
-        <div class="frm-sign-up">
+            <p>Take your art to the next level. Get it <br>seen by millions of people.</p>
+          </div>
+          <button class="btn btn-join">Join with Facebook</button>
+          <p class="or">Or</p>
+          <div class="frm-sign-up">
             <form action="https://example.com/signup" method="POST">
-                <div class="username-group">
-                    <input type="text" id="name" name="name" placeholder="First name">
-                    <input type="text" id="username" name="username" placeholder="Last name">
-                </div>
-                <div class="input-group">
-                    <input type="email" id="email" name="email" required>
-                    <input type="password" id="password" name="password" required>
-                </div>
-                <button class="btn-sign" type="submit">Sign Up</button>
+              <div class="username-group">
+                <input type="text" id="name" name="name" placeholder="First name">
+                <input type="text" id="username" name="username" placeholder="Last name">
+              </div>
+              <div class="input-group">
+                <input type="email" id="email" name="email" placeholder="Email" required>
+                <input type="password" id="password" name="password" placeholder="Password" required>
+              </div>
+              <button class="btn-sign" type="submit">Create New Account</button>
             </form>
-            <p>By using you agree to out terms of Service and Privacy Policy.</p>
+            <p class="terms">By joining, you agree to our Terms of <br> and Privacy Policy.</p>
+          </div>
         </div>
-    </main>
+      </main>
+    
 </body>
 </html>
