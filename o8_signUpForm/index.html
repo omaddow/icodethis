@@ -3,27 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/styles.css">
     <title>Sign Up Form</title>
 </head>
 <body>
     <main>
-        <h1>Join the community</h1>
-        <p>Take your art to the next level. Get it seen by millions of people.</p>
-        <div class="btn btn-join">
-            <button>Join with Facebook</button>
+        <div class="heading">
+            <h1>Join the community</h1>
+            <p>Take your art to the next level. Get it seen by millions of people.</p>
         </div>
-        <p>Or</p>
+        <button class="btn btn-join">Join with Facebook</button>
+        <p class="or">Or</p>
         <div class="frm-sign-up">
             <form action="https://example.com/signup" method="POST">
-                <div class="input-group">
-                    <input type="text" id="name" name="name" required>
-                    <input type="text" id="username" name="username" required>
+                <div class="username-group">
+                    <input type="text" id="name" name="name" placeholder="First name">
+                    <input type="text" id="username" name="username" placeholder="Last name">
                 </div>
                 <div class="input-group">
                     <input type="email" id="email" name="email" required>
                     <input type="password" id="password" name="password" required>
                 </div>
-                <button type="submit">Sign Up</button>
+                <button class="btn-sign" type="submit">Sign Up</button>
             </form>
             <p>By using you agree to out terms of Service and Privacy Policy.</p>
         </div>
